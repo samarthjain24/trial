@@ -1,7 +1,5 @@
 clear all
-clc
 
-format compact
 
 A = [4 -1 0 -1 0 0;
      -1 4 -1 0 -1 0;
@@ -28,4 +26,4 @@ while max(Error_eval) > 0.0005
     Error_eval = sqrt((X - Z).^2);
 end
 
-GaussSeidelTable = [1:iter;Xsol]'
+GaussSeidelTable = [1:iter;Xsol]';
